@@ -52,6 +52,9 @@ if (!isset($_SESSION['Rol'])) {
     <div class="center-table">
         <table class="table table-bordered custom-table">
             <thead>
+                <a href="generar_pdf.php" target="_blank" class="btn btn-primary">
+                    Generar PDF
+                </a>
                 <tr>
                     <th>Id Reporte</th>
                     <th>Area</th>
@@ -81,7 +84,7 @@ if (!isset($_SESSION['Rol'])) {
                         <td><?php echo $row['Observaciones']; ?></td>
                         <td><?php echo $row['Otros']; ?></td>
                         <td>
-                            <a href="edit.php?id=<?php echo $row['ReporteTecnicoID'] ?>" class="btn btn-secondary">
+                            <a href="editTecnicos.php" class="btn btn-secondary">
                                 <i class="fas fa-marker"></i> Editar
                             </a>
                             <a href="#" onclick="confirmDelete(<?php echo $row['ReporteTecnicoID']; ?>)" class="btn btn-danger">
