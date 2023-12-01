@@ -56,11 +56,11 @@ if (!isset($_SESSION['Rol'])) {
                 <tr>
                     <th>Id Reporte</th>
                     <th>Nombre del reportante:</th>
-                    <th>Area</th>
-                    <th>Numero impresora</th>
+                    <th>Área</th>
+                    <th>Número de impresora</th>
                     <th>Fecha</th>
                     <th>Estado</th>
-                    <th>Descripcion</th>
+                    <th>Descripción </th>
                     <th>Detalles:</th>
                     <td>
                         <!-- Botón para Generar PDF -->

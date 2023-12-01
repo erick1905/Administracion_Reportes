@@ -52,13 +52,19 @@ if (!isset($_SESSION['Rol'])) {
     <table class="table table-bordered custom-table">
       <thead>
         <tr>
-          <th>Id prestamo</th>
+          <th>Id préstamo</th>
           <th>Dependencia</th>
           <th>Receptor</th>
           <th>Fecha</th>
           <th>Producto</th>
           <th>Requiere personal</th>
-          <th>Fecha devolucion</th>
+          <th>Fecha devolución</th>
+          <td>
+            <!-- Botón para Generar PDF -->
+            <a href="reportesprestamos.php" class="btn btn-primary">
+              Generar PDF
+            </a>
+          </td>
         </tr>
       </thead>
       <tbody>
@@ -84,9 +90,6 @@ if (!isset($_SESSION['Rol'])) {
               </a>
               <a href="#" onclick="confirmDelete(<?php echo $row['Prestamo_id']; ?>)" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i> Eliminar
-              </a>
-              <a href="fpdf/PruebaH.php " target="_blank" id=<?php echo $row['Prestamo_id'] ?>" class="btn btn-success">
-                <i class="far fa-file-pdf"></i> Generar PDF
               </a>
             </td>
           </tr>
