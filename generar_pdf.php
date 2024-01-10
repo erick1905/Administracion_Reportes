@@ -13,22 +13,20 @@ $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 
 $pdf->AddPage();
 
-// Agregar imagen
-$imageFile = 'Ayuntamiento.jpg'; // Reemplaza con la ruta de tu imagen
-$pdf->Image($imageFile, 160, 10, 40, '', 'JPG', '', 'T', false, 300);
+$imageFile = 'Ayuntamiento.jpg';
+$pdf->Image($imageFile, 10, 10, 40, '', 'JPG', '', 'T', false, 300);
 
-// Encabezado en la esquina superior izquierda
 $pdf->SetFont('helvetica', 'B', 16);
-$pdf->SetXY(10, 15); // Ajusta la posición X e Y del texto
-$pdf->Cell(0, 10, 'H. Ayuntamiento de Colima', 0, 1, 'L');
+$pdf->SetXY(60, 15);
+$pdf->Cell(0, 10, 'H. Ayuntamiento de Colima', 0, 1, 'R');
 
 $pdf->SetFont('helvetica', '', 10);
-$pdf->SetXY(10, 25); // Ajusta la posición X e Y del texto
-$pdf->Cell(0, 10, 'Dirección: Calle Gregorio Torres Quintero 85', 0, 1, 'L');
-$pdf->SetXY(10, 35); // Ajusta la posición X e Y del texto
-$pdf->Cell(0, 10, 'Teléfono: 3123163800', 0, 1, 'L');
-$pdf->SetXY(10, 45); // Ajusta la posición X e Y del texto
-$pdf->Cell(0, 10, 'Correo: ejemplo@correo.com', 0, 1, 'L');
+$pdf->SetXY(60, 25);
+$pdf->Cell(0, 10, 'Dirección: Calle Gregorio Torres Quintero 85', 0, 1, 'R');
+$pdf->SetXY(60, 35);
+$pdf->Cell(0, 10, 'Teléfono: 3123163800', 0, 1, 'R');
+$pdf->SetXY(60, 45);
+$pdf->Cell(0, 10, 'Correo: ejemplo@correo.com', 0, 1, 'R');
 
 
 
