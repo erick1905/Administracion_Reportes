@@ -24,21 +24,24 @@ if (!isset($_SESSION['Rol'])) {
     <link rel="stylesheet" href="uno.css" />
     <link rel="stylesheet" href="dos.css" />
     <link rel="stylesheet" href="tres.css" />
-    <title>Reportes Colima</title>
+    <title>Administración de reportes Colima</title>
 </head>
 
 <body>
     <div class="contenedor">
-        <h1>Reportes</h1>
+        <h1>Administración Reportes</h1>
         <div class="contenedor-botones">
             <a href="impresoras.php">
                 <button class="boton uno" onclick=""> <span>Fallos de impresoras</span> </button>
             </a>
             <a href="Tecnicos.php">
-                <button class="boton dos"><span>Tecnicos y redes</span></button>
+                <button class="boton dos"><span>Técnico y redes</span></button>
             </a>
             <a href="index.php">
-                <button class="boton tres"><span>Prestamo equipos</span></button>
+                <button class="boton tres"><span>Préstamo equipos</span></button>
+            </a>
+            <a href="cerrarsesion.php">
+                <button class="boton tres"><span>Cerrar sesión</span></button>
             </a>
             <div class="icono">
             </div>

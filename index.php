@@ -60,6 +60,7 @@ if (!isset($_SESSION['Rol'])) {
           <th>Requiere personal</th>
           <th>Fecha devolución</th>
           <td>
+          
             <!-- Botón para Generar PDF -->
             <a href="reportesprestamos.php" class="btn btn-primary">
               Generar PDF
@@ -91,6 +92,9 @@ if (!isset($_SESSION['Rol'])) {
               <a href="#" onclick="confirmDelete(<?php echo $row['Prestamo_id']; ?>)" class="btn btn-danger">
                 <i class="far fa-trash-alt"></i> Eliminar
               </a>
+              <a href="generar_reporte.php?id=<?php echo $row['Prestamo_id']; ?>" class="btn btn-dark">
+    <i class="fas fa-print"></i> Recibo
+</a>
             </td>
           </tr>
         <?php } ?>

@@ -14,7 +14,7 @@ $pdf->SetAutoPageBreak(TRUE, PDF_MARGIN_BOTTOM);
 $pdf->AddPage();
 
 $imageFile = 'Ayuntamiento.jpg';
-$pdf->Image($imageFile, 10, 10, 40, '', 'JPG', '', 'T', false, 300);
+$pdf->Image($imageFile, 10, 15, 40, '', 'JPG', '', 'T', false, 300);
 
 $pdf->SetFont('helvetica', 'B', 16);
 $pdf->SetXY(60, 15);
@@ -24,9 +24,9 @@ $pdf->SetFont('helvetica', '', 10);
 $pdf->SetXY(60, 25);
 $pdf->Cell(0, 10, 'Dirección: Calle Gregorio Torres Quintero 85', 0, 1, 'R');
 $pdf->SetXY(60, 35);
-$pdf->Cell(0, 10, 'Teléfono: 3123163800', 0, 1, 'R');
+$pdf->Cell(0, 10, 'Teléfono: 3123163844', 0, 1, 'R');
 $pdf->SetXY(60, 45);
-$pdf->Cell(0, 10, 'Correo: ejemplo@correo.com', 0, 1, 'R');
+$pdf->Cell(0, 10, 'Correos:sistemas@colima.gob.mx o jose.llerenas@colima.gob.mx', 0, 1, 'R');
 
 $html = '<h1></h1>';
 $html .= '<table border="1">';
